@@ -1,0 +1,9 @@
+venv/
+base-model/
+IlaAI-v1/
+dataset/
+data/
+adapters/
+.DS_Store
+*.parquet
+*.safetensors

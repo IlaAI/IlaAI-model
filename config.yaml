@@ -1,0 +1,23 @@
+# IlaAI Fine-tuning Config
+model: "base-model"
+train: true
+data: "data"
+
+# LoRA settings
+lora_layers: 8
+lora_rank: 8
+lora_scale: 20.0
+lora_dropout: 0.05
+
+# Training settings
+batch_size: 2
+iters: 5000
+val_batches: 25
+learning_rate: 1e-5
+steps_per_report: 50
+steps_per_eval: 500
+save_every: 500
+grad_checkpoint: true
+
+# Output
+adapter_path: "adapters"
